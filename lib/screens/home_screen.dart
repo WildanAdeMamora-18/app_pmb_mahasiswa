@@ -109,14 +109,36 @@ class HomeScreen extends StatelessWidget
                         SizedBox(height: 10),
 
                         announcementCard(),
+                        SizedBox(height: 10),
                         announcementCard(),
-                        announcementCard(),
-                        announcementCard(),
-                        announcementCard(),
-                        announcementCard(),
+                        SizedBox(height: 10),
                         announcementCard(),
                     ]
                 )
+            ),
+
+            bottomNavigationBar: BottomNavigationBar(
+                currentIndex: 0,
+                selectedItemColor: Colors.blueAccent,
+                unselectedItemColor: Colors.grey,
+                items: [
+                    BottomNavigationBarItem(
+                        icon: Icon(Icons.home),
+                        label: "Beranda",
+                    ),
+                    BottomNavigationBarItem(
+                        icon: Icon(Icons.person),
+                        label: "Pendaftaran",
+                    ),
+                    BottomNavigationBarItem(
+                        icon: Icon(Icons.home),
+                        label: "Informasi",
+                    ),
+                    BottomNavigationBarItem(
+                        icon: Icon(Icons.person),
+                        label: "Profil",
+                    ),
+                ]
             ),
         );
     }

@@ -12,6 +12,10 @@ class ButtonSubmit extends StatelessWidget
     return SizedBox(
       width: double.infinity,
       child: ElevatedButton(
+        style: ButtonStyle(
+          backgroundColor: MaterialStateProperty.all(Colors.blueAccent),
+          foregroundColor: MaterialStateProperty.all(Colors.white), // warna teks
+        ),
         onPressed: onPressed,
         child: Text("Daftar"),
       ),

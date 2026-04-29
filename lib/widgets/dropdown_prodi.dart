@@ -13,8 +13,17 @@ class DropdownProdi extends StatelessWidget
     });
 
     final List<String> prodi = [
+        "Teknik Elektro",
         "Teknik Informatika",
         "Sistem Informasi",
+        "Teknik Mesin",
+        "Teknik Sipil",
+        "Teknik Kimia",
+        "Teknik Industri",
+        "Teknik Lingkungan",
+        "Teknik Geologi",
+        "Teknik Kelautan",
+        "Teknik Pertambangan",
         "Manajemen",
         "Akuntansi"
     ];

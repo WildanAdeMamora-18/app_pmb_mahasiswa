@@ -4,6 +4,7 @@ import 'package:intl/intl.dart';
 class TempatTanggalLahir extends StatelessWidget
 {
   final String title;
+  final String hint;
   final TextEditingController tempatLahirController;
   final TextEditingController tanggalLahirController;
   final Function(DateTime) onDateSelected;
@@ -11,6 +12,7 @@ class TempatTanggalLahir extends StatelessWidget
   const TempatTanggalLahir({
     super.key,
     required this.title,
+    required this.hint,
     required this.tempatLahirController,
     required this.tanggalLahirController,
     required this.onDateSelected,
@@ -40,7 +42,7 @@ class TempatTanggalLahir extends StatelessWidget
                 child: TextFormField(
                   controller: tempatLahirController,
                   decoration: InputDecoration(
-                    labelText: 'Tempat Lahir',
+                    hintText: 'Tempat Lahir',
                     border: OutlineInputBorder(),
                   ),
                 ),
@@ -54,7 +56,7 @@ class TempatTanggalLahir extends StatelessWidget
                   controller: tanggalLahirController,
                   readOnly: true,
                   decoration: InputDecoration(
-                    labelText: 'Tanggal Lahir',
+                    hintText: 'Tanggal Lahir',
                     border: OutlineInputBorder(),
                     suffixIcon: Icon(Icons.calendar_today),
                   ),
