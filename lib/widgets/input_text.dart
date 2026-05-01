@@ -3,15 +3,17 @@ import 'package:flutter/material.dart';
 class CustomTextField extends StatelessWidget {
   final String title;
   final String hint;
+  final TextInputType? keyboardType;
   final TextEditingController controller;
-  // final String? Function(String?)? validator;
+  final String? Function(String?)? validator;
 
   CustomTextField({
     super.key,
     required this.title,
     required this.hint,
+    this.keyboardType,
     required this.controller,
-    // required this.validator,
+    required this.validator,
   });
 
   @override
@@ -35,7 +37,7 @@ class CustomTextField extends StatelessWidget {
           // 🔹 Input field
           TextFormField(
             controller: controller,
-            // validator: validator,
+            validator: validator,
             decoration: InputDecoration(
               hintText: hint,
               border: OutlineInputBorder(),
